@@ -12,4 +12,5 @@ export class Cellule {
         this.col = col;
         this.cellClass = cellClass;
     }
+    
 }

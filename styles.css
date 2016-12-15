@@ -72,7 +72,7 @@ table#sudoku-table tr td:last-child {
 }
 
 #sudoku-table td.empty {
-    color: #ff5747;
+    color: #00afec;
 }
 
 #sudoku-table td.empty .anim {
