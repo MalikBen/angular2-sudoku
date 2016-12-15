@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Sudoku</h1>
+    <table id="buttons-table">
+        <tbody>
+            <tr>
+                <td><button id="data1" (click)="changeData(0)">#1</button></td>
+                <td><button id="data2" (click)="changeData(1)">#2</button></td>
+                <td><button id="data3" (click)="changeData(2)">#3</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="sudoku-table">
+    <tbody>
+        <tr *ngFor="let line of lines">
+            <td *ngFor="let cellule of line" class="{{cellule.cellClass}}">
+                <div class="anim">
+                    {{cellule.value}}
+                </div>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    <button id="solveButton" (click)="solveClick()">Résoudre</button>
+</div>
